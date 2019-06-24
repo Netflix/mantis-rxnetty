@@ -39,7 +39,7 @@ ext {
 sourceCompatibility = JavaVersion.VERSION_1_8
 targetCompatibility = JavaVersion.VERSION_1_8
 
-version = "${rootProject.versionRxNetty}.${versionSuffix}"
+version = "${rootProject.versionRxNetty}.${versionSuffix}${project.gradle.startParameter.taskNames.contains('snapshot') ? '-SNAPSHOT' : ''}"
 
 repositories {
     jcenter()
