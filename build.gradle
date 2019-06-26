@@ -67,6 +67,14 @@ shadowJar {
 jar.deleteAllActions()
 jar.dependsOn shadowJar
 
+bintray {
+    pkg {
+        version {
+            name = '0.4.19.1'
+        }
+    }
+}
+
 afterEvaluate {
     publishing {
         publications {
