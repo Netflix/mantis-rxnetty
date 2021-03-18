@@ -21,7 +21,7 @@ apply plugin: 'com.github.johnrengelman.shadow'
 
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
         maven {
             url "https://plugins.gradle.org/m2/"
         }
@@ -42,7 +42,7 @@ targetCompatibility = JavaVersion.VERSION_1_8
 version = "${rootProject.versionRxNetty}.${versionSuffix}${project.gradle.startParameter.taskNames.contains('snapshot') ? '-SNAPSHOT' : ''}"
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
